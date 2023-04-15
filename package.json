@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "cd server && npm run test",
-    "dev-server": "cd server && npm run dev"
+    "dev-server": "cd server && npm run dev",
+    "start-server": "cd server && npm run start",
+    "client": "cd client && npm run start",
+    "start": "concurrently \"npm run dev-start\" \"npm run client\" "
   },
   "keywords": [],
   "author": "",
