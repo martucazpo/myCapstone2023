@@ -16,7 +16,21 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true,
         default: "Associate"
-    }
+    },
+    todos: [{
+        type: mongoose.Schema.Types.ObjectId,
+        rel: "Todo"
+    }],
+    posts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        rel: "Post"
+    }],
+    contacts: [{
+        type: mongoose.Schema.Types.ObjectId,
+        rel: "Contact"
+    }]
+},{
+    timestamps: true
 })
 
 
