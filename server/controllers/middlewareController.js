@@ -5,6 +5,6 @@ module.exports = {
         if(req.isAuthenticated()){
             return next()
         }
-        else res.status(202).json({ message: "Please log in to view this page."})
+        else res.status(202).json({ message: "Please log in."})
     }
 }

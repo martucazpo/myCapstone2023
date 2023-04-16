@@ -13,7 +13,6 @@ suite("Should be able to create a test user", () => {
         password: "password",
         role: "Admin"
     }
-    // The following will now only output the user _id (changed controller)
     // test("should be able to make a test user", (done)=>{
     //     chai
     //     .request(server)
@@ -22,8 +21,7 @@ suite("Should be able to create a test user", () => {
     //     .end((err, res)=>{
     //         console.log(res.body)
     //         assert.equal(res.status, 200)
-    //         assert.equal(res.body.user.firstName,"Lettuce")
-    //         assert.isArray(res.body.user.contacts)
+    //         assert.exists(res.body._id)
     //         done()
     //     })
     // })
