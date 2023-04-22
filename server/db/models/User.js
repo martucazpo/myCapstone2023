@@ -17,6 +17,11 @@ const userSchema = new mongoose.Schema({
         required: true,
         default: "Associate"
     },
+    permissions: {
+        type: mongoose.Schema.Types.ObjectId,
+        rel: "Admin",
+        default:null
+    },
     todos: [{
         type: mongoose.Schema.Types.ObjectId,
         rel: "Todo"
